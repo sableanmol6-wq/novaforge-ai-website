@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact NovaForge AI to discuss a website project.">
+    <title>Contact | NovaForge AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <div class="fixed inset-0 -z-10 overflow-hidden" aria-hidden="true">
+        <div class="absolute left-10 top-24 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 h-96 w-96 rounded-full bg-purple-500/10 blur-3xl"></div>
+    </div>
+
+
+<header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur-xl">
+    <nav class="mx-auto max-w-7xl px-5 sm:px-8" aria-label="Main navigation">
+        <div class="flex h-20 items-center justify-between">
+            <a href="index.html" class="text-2xl sm:text-3xl font-extrabold tracking-wide" aria-label="NovaForge AI home">
+                <span class="text-cyan-400">Nova</span>Forge <span class="text-cyan-400">AI</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-7 text-sm font-semibold">
+                <a href="index.html" class="nav-link ">Home</a>
+<a href="services.html" class="nav-link ">Services</a>
+<a href="portfolio.html" class="nav-link ">Portfolio</a>
+<a href="about.html" class="nav-link ">About</a>
+<a href="pricing.html" class="nav-link ">Pricing</a>
+<a href="contact.html" class="nav-link active">Contact</a>
+                <a href="contact.html" class="rounded-xl bg-cyan-400 px-5 py-3 text-slate-950 transition hover:bg-cyan-300">
+                    Get Started
+                </a>
+            </div>
+
+            <button id="menu-btn"
+                    class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 text-2xl lg:hidden"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false">
+                <span id="menu-icon">☰</span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-slate-800 py-4 lg:hidden">
+            <div class="flex flex-col gap-2">
+                <a href="index.html" class="mobile-nav-link ">Home</a>
+<a href="services.html" class="mobile-nav-link ">Services</a>
+<a href="portfolio.html" class="mobile-nav-link ">Portfolio</a>
+<a href="about.html" class="mobile-nav-link ">About</a>
+<a href="pricing.html" class="mobile-nav-link ">Pricing</a>
+<a href="contact.html" class="mobile-nav-link active">Contact</a>
+                <a href="contact.html" class="mt-2 rounded-xl bg-cyan-400 px-4 py-3 text-center font-bold text-slate-950">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+
+<section class="mx-auto max-w-7xl px-5 py-20 text-center sm:px-8 lg:py-24">
+    <span class="inline-block rounded-full bg-cyan-500/15 px-4 py-2 text-sm text-cyan-300">📞 Contact NovaForge AI</span>
+    <h1 class="mx-auto mt-7 max-w-5xl text-4xl font-extrabold sm:text-5xl lg:text-6xl">
+        Let Us Build Something <span class="text-cyan-400">Useful Together</span>
+    </h1>
+    <p class="mx-auto mt-7 max-w-3xl text-lg leading-8 text-slate-400">
+        Share your business type, required pages, preferred features, and target deadline.
+    </p>
+</section>
+
+<section class="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+    <div class="grid gap-10 lg:grid-cols-5">
+        <div class="space-y-6 lg:col-span-2">
+            <article class="card">
+                <h2 class="text-2xl font-bold text-cyan-400">📧 Email</h2>
+                <p class="mt-4 text-slate-400">novaforgeai66@gmail.com</p>
+            </article>
+
+            <article class="card">
+                <h2 class="text-2xl font-bold text-cyan-400">📱 Phone / WhatsApp</h2>
+                <p class="mt-4 text-slate-400">+91 7498270338</p>
+            </article>
+
+            <article class="card">
+                <h2 class="text-2xl font-bold text-cyan-400">📍 Location</h2>
+                <p class="mt-4 text-slate-400">Maharashtra, India</p>
+            </article>
+        </div>
+
+        <div class="rounded-3xl border border-slate-800 bg-slate-900/80 p-6 sm:p-10 lg:col-span-3">
+            <h2 class="text-3xl font-bold">Send a Project Enquiry</h2>
+
+            <form id="contact-form" class="mt-8 space-y-6">
+                <div>
+                    <label for="name" class="mb-2 block text-sm font-semibold">Your name</label>
+                    <input id="name" name="name" type="text" required
+                           class="form-control" placeholder="Enter your name">
+                </div>
+
+                <div>
+                    <label for="email" class="mb-2 block text-sm font-semibold">Your email</label>
+                    <input id="email" name="email" type="email" required
+                           class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div>
+                    <label for="phone" class="mb-2 block text-sm font-semibold">Phone number</label>
+                    <input id="phone" name="phone" type="tel"
+                           class="form-control" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                    <label for="message" class="mb-2 block text-sm font-semibold">Project details</label>
+                    <textarea id="message" name="message" rows="7" required
+                              class="form-control"
+                              placeholder="Tell us about your business, required pages, features, and deadline."></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full rounded-xl bg-cyan-400 py-4 font-bold text-slate-950 transition hover:bg-cyan-300">
+                    Send by Email
+                </button>
+
+                <p id="form-status" class="hidden rounded-xl border border-cyan-500/40 bg-cyan-500/10 p-4 text-sm text-cyan-200"></p>
+
+                <p class="text-sm leading-6 text-slate-500">
+                    This static form opens the visitor's email application. Replace the business email
+                    and phone number before publishing the website.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+<footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 md:grid-cols-3">
+        <div>
+            <a href="index.html" class="text-2xl font-extrabold">
+                <span class="text-cyan-400">Nova</span>Forge <span class="text-cyan-400">AI</span>
+            </a>
+            <p class="mt-4 max-w-sm text-sm leading-7 text-slate-400">
+                Modern websites and practical digital solutions for coaching institutes,
+                educators, and education businesses.
+            </p>
+        </div>
+
+        <div>
+            <h2 class="font-bold text-white">Quick Links</h2>
+            <div class="mt-4 grid grid-cols-2 gap-3 text-sm text-slate-400">
+                <a href="services.html" class="hover:text-cyan-400">Services</a>
+                <a href="portfolio.html" class="hover:text-cyan-400">Portfolio</a>
+                <a href="about.html" class="hover:text-cyan-400">About</a>
+                <a href="pricing.html" class="hover:text-cyan-400">Pricing</a>
+                <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="font-bold text-white">Contact</h2>
+            <div class="mt-4 space-y-3 text-sm text-slate-400">
+                <p>📧 novaforgeai66@gmail.com</p>
+                <p>📱 +91 7498270338</p>
+                <p>📍 Maharashtra, India</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="border-t border-slate-800 px-5 py-5 text-center text-sm text-slate-500">
+        © <span id="current-year"></span> NovaForge AI. All rights reserved.
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
