@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+::selection {
+    background: rgba(34, 211, 238, 0.85);
+    color: #020617;
+}
+
+.nav-link,
+.mobile-nav-link {
+    color: #cbd5e1;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-link:hover,
+.mobile-nav-link:hover,
+.nav-link.active,
+.mobile-nav-link.active {
+    color: #22d3ee;
+}
+
+.mobile-nav-link {
+    border-radius: 0.75rem;
+    padding: 0.8rem 1rem;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    background: rgba(34, 211, 238, 0.08);
+}
+
+.card {
+    border: 1px solid #1e293b;
+    border-radius: 1.5rem;
+    background: rgba(15, 23, 42, 0.82);
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #22d3ee;
+    box-shadow: 0 20px 45px rgba(8, 145, 178, 0.14);
+}
+
+.price-card {
+    border: 1px solid #1e293b;
+    border-radius: 1.5rem;
+    background: rgba(15, 23, 42, 0.82);
+    padding: 2.5rem;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-8px);
+    border-color: #22d3ee;
+    box-shadow: 0 24px 55px rgba(8, 145, 178, 0.16);
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #334155;
+    border-radius: 0.85rem;
+    background: #1e293b;
+    padding: 1rem;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+.form-control:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.12);
+}
+
+@media (min-width: 1024px) {
+    .popular-card {
+        transform: scale(1.04);
+    }
+
+    .popular-card:hover {
+        transform: scale(1.04) translateY(-8px);
+    }
+}
